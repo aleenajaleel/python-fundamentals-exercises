@@ -1,0 +1,534 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOql2zAoBJYvuAIYIpHQ8dU",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/aleenajaleel/python-fundamentals-exercises/blob/main/Basic%20Python%20Practice%3A%20Calculator%20%26%20Real-World%20Programs\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "THzEqC-X8Hu2",
+        "outputId": "b0f94cbf-c07c-4c37-f0a2-c609c69a71d2"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "          *          \n",
+            "       *     *       \n",
+            "      *        *     \n",
+            "     ************    \n",
+            "     *          *    \n",
+            "     *          *    \n",
+            "     *          *    \n",
+            "     ************    \n"
+          ]
+        }
+      ],
+      "source": [
+        "print(\"          *          \")\n",
+        "print(\"       *     *       \")\n",
+        "print(\"      *        *     \")\n",
+        "print(\"     ************    \")\n",
+        "print(\"     *          *    \")\n",
+        "print(\"     *          *    \")\n",
+        "print(\"     *          *    \")\n",
+        "print(\"     ************    \")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a=int(input(\"enter the first number\"))\n",
+        "b=int(input(\"enter the second number\"))\n",
+        "c=input(\"enter the operation\")\n",
+        "if c==\"+\":\n",
+        "    print(a+b)\n",
+        "elif c==\"-\":\n",
+        "    print(a-b)\n",
+        "elif c==\"%\":\n",
+        "    print(a%b)\n",
+        "elif c==\"*\":\n",
+        "    print(a*b)\n",
+        "elif c==\"/\":\n",
+        "    print(a/b)\n",
+        "else:\n",
+        "    print(\"invalid operation\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "IOoUNPdb-Esb",
+        "outputId": "8faf0390-6150-4f32-c854-0d48a5e5d601"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter the first number3\n",
+            "enter the second number6\n",
+            "enter the operation+\n",
+            "9\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Digital Introduction Card\n",
+        "#Write a program that accepts a student's name, age, course, and percentage and displays them as a formatted introduction card.\n",
+        "#Concepts: str, int, float, input/output."
+      ],
+      "metadata": {
+        "id": "_GMwHfQN_fNd"
+      },
+      "execution_count": 1,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "name=input(\"enter your name\")\n",
+        "age=input(\"enter your age\")\n",
+        "course=input(\"enter your course\")\n",
+        "percentage=input(\"enter your percentage\")\n",
+        "k=(f\"hello, my name is {name} . i am {age} years old . i am currently doing {course} and i have secured {percentage} percentage marks \")\n",
+        "print(k)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "KXthVEYNRYH4",
+        "outputId": "dca300b5-9d6e-46f0-8542-c47ecb66b17f"
+      },
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter your namealeena\n",
+            "enter your age19\n",
+            "enter your coursebca\n",
+            "enter your percentage87\n",
+            "hello, my name is aleena . i am 19 years old . i am currently doing bca and i have secured 87 percentage marks \n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#2. Age Calculator\n",
+        "#Accept the user's birth year and calculate their approximate age"
+      ],
+      "metadata": {
+        "id": "VTnzmCb0S9k1"
+      },
+      "execution_count": 6,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a=int(input(\"enter your birth year\"))\n",
+        "b=2026\n",
+        "c=b-a\n",
+        "print(\"your age is :\",c)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Mq1rDIqgUK53",
+        "outputId": "48d97c38-e100-48dd-a308-48735578edef"
+      },
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter your birth year2008\n",
+            "your age is : 18\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#3. Bill Calculator\n",
+        "#Accept the price and quantity of an item and calculate the total bill."
+      ],
+      "metadata": {
+        "id": "e5syCa5LUo2l"
+      },
+      "execution_count": 11,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "price=int(input(\"enter the price\"))\n",
+        "quantity=int(input(\"enter the quantity\"))\n",
+        "total=price*quantity\n",
+        "print(\"total bill is :\",total)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "U8nh_bFJVZ3w",
+        "outputId": "8fc1a43f-5dd1-47f7-9836-a1f28a2f893e"
+      },
+      "execution_count": 13,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter the price55\n",
+            "enter the quantity2\n",
+            "total bill is : 110\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#4. Mobile Recharge Calculator\n",
+        "#Accept recharge amount and GST percentage. Calculate the GST and final amount."
+      ],
+      "metadata": {
+        "id": "Y842UAf3ZIOG"
+      },
+      "execution_count": 14,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "recharge=int(input(\"enter the recharge amount\"))\n",
+        "gst=int(input(\"enter the gst percentage\"))\n",
+        "gst_amount=(recharge*gst)/100\n",
+        "final_amount=recharge+gst_amount\n",
+        "print(\"gst amount is :\",gst_amount)\n",
+        "print(\"final amount is :\",final_amount)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Q0CwuDTzZXBg",
+        "outputId": "d6dd6efd-532b-4657-db9b-49e6472be3dc"
+      },
+      "execution_count": 15,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter the recharge amount399\n",
+            "enter the gst percentage3\n",
+            "gst amount is : 11.97\n",
+            "final amount is : 410.97\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#5. Temperature Converter\n",
+        "#Accept temperature in Celsius and convert it to Fahrenheit"
+      ],
+      "metadata": {
+        "id": "yAvYK5CKZmWt"
+      },
+      "execution_count": 16,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "temperature=int(input(\"enter the temperature in celsius\"))\n",
+        "fahrenheit=(temperature*9/5)+32\n",
+        "print(\"temperature in fahrenheit is :\",fahrenheit)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "u3j-fER5ZwD-",
+        "outputId": "61faa816-1731-4584-846f-a1370d09d220"
+      },
+      "execution_count": 17,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter the temperature in celsius45\n",
+            "temperature in fahrenheit is : 113.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#6. Simple Interest Calculator\n",
+        "#Accept principal, rate, and time and calculate simple interest and total amount."
+      ],
+      "metadata": {
+        "id": "-nR7fUWHZ3da"
+      },
+      "execution_count": 18,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "principle=int(input(\"enter the principle\"))\n",
+        "rate=int(input(\"enter the rate\"))\n",
+        "time=int(input(\"enter the time\"))\n",
+        "simple_interest=(principle*rate*time)/100\n",
+        "total_amount=principle+simple_interest\n",
+        "print(\"simple interest is :\",simple_interest)\n",
+        "print(\"total amount is :\",total_amount)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "MvX2vtm3aDYK",
+        "outputId": "0d9a02cf-7da2-4025-c101-306fd657fca7"
+      },
+      "execution_count": 19,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter the principle500\n",
+            "enter the rate5\n",
+            "enter the time7\n",
+            "simple interest is : 175.0\n",
+            "total amount is : 675.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#7. Travel Distance Calculator\n",
+        "#Accept speed and travel time and calculate the distance travelled"
+      ],
+      "metadata": {
+        "id": "vJhzd1yLaPyd"
+      },
+      "execution_count": 20,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "speed=int(input(\"enter the speed\"))\n",
+        "time=int(input(\"enter the time\"))\n",
+        "distance=speed*time\n",
+        "print(\"distance travelled is :\",distance)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "b2Jfx-cBacKo",
+        "outputId": "e4e92351-2ca5-4e5f-dc01-c208998c1ab0"
+      },
+      "execution_count": 21,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter the speed60\n",
+            "enter the time3\n",
+            "distance travelled is : 180\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#8. BMI Calculator\n",
+        "#Accept height in metres and weight in kilograms and calculate BMI"
+      ],
+      "metadata": {
+        "id": "cfUQsbw7agKH"
+      },
+      "execution_count": 22,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "heihgt=float(input(\"enter the height in metres\"))\n",
+        "weight=int(input(\"enter the weight in kilograms\"))\n",
+        "bmi=weight/(heihgt*heihgt)\n",
+        "print(\"bmi is :\",bmi)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "nC-CuUiraxfu",
+        "outputId": "6b6de8bd-9ccd-4e7f-c1da-402fd251a15e"
+      },
+      "execution_count": 24,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter the height in metres1.56\n",
+            "enter the weight in kilograms46\n",
+            "bmi is : 18.902038132807363\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#9. Electricity Bill Estimator\n",
+        "#Accept units consumed and cost per unit. Calculate the estimated bill"
+      ],
+      "metadata": {
+        "id": "sgM891qba0PO"
+      },
+      "execution_count": 25,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "units=int(input(\"enter the units consumed\"))\n",
+        "cost=int(input(\"enter the cost per unit\"))\n",
+        "estimated_bill=units*cost\n",
+        "print(\"estimated bill is :\",estimated_bill)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "xiTbhWYKbQ3P",
+        "outputId": "e51508f1-967f-4305-f3ce-610d210619dc"
+      },
+      "execution_count": 26,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter the units consumed5\n",
+            "enter the cost per unit40\n",
+            "estimated bill is : 200\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#10. Shopping Receipt\n",
+        "#Accept the names and prices of three products and display the total purchase amount."
+      ],
+      "metadata": {
+        "id": "GX3rGthxbXuk"
+      },
+      "execution_count": 27,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "prd1=input(\"enter the name of the first product\")\n",
+        "prd2=input(\"enter the name of the second product\")\n",
+        "prd3=input(\"enter the name of the third product\")\n",
+        "price1=int(input(\"enter the price of the first product\"))\n",
+        "price2=int(input(\"enter the price of the second product\"))\n",
+        "price3=int(input(\"enter the price of the third product\"))\n",
+        "total_purchase_amount=price1+price2+price3\n",
+        "print(\"total purchase amount is :\",total_purchase_amount)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "c4AdD3rqbktm",
+        "outputId": "fc5abf95-ccbd-4330-a399-3e3e50632737"
+      },
+      "execution_count": 29,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter the name of the first productbanana\n",
+            "enter the name of the second productmango\n",
+            "enter the name of the third productblue berry\n",
+            "enter the price of the first product69\n",
+            "enter the price of the second product80\n",
+            "enter the price of the third product160\n",
+            "total purchase amount is : 309\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "RrHZOGQ6bqlw"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
