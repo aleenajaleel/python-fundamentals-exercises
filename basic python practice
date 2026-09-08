@@ -1,0 +1,124 @@
+# basic house using stars
+
+
+print("          *          ")
+print("       *     *       ")
+print("      *        *     ")
+print("     ************    ")
+print("     *          *    ")
+print("     *          *    ")
+print("     *          *    ")
+print("     ************    ")
+
+
+#basic calculator using opreators and if & else
+
+a=int(input("enter the first number"))
+b=int(input("enter the second number"))
+c=input("enter the operation")
+if c=="+":
+    print(a+b)
+elif c=="-":
+    print(a-b)
+elif c=="%":
+    print(a%b)
+elif c=="*":
+    print(a*b)
+elif c=="/":
+    print(a/b)
+else:
+    print("invalid operation")
+
+#Digital Introduction Card
+#Write a program that accepts a student's name, age, course, and percentage and displays them as a formatted introduction card.
+#Concepts: str, int, float, input/output.
+
+name=input("enter your name")
+age=input("enter your age")
+course=input("enter your course")
+percentage=input("enter your percentage")
+k=(f"hello, my name is {name} . i am {age} years old . i am currently doing {course} and i have secured {percentage} percentage marks ")
+print(k)
+
+
+#2. Age Calculator
+#Accept the user's birth year and calculate their approximate age
+
+a=int(input("enter your birth year"))
+b=2026
+c=b-a
+print("your age is :",c)
+
+#3. Bill Calculator
+#Accept the price and quantity of an item and calculate the total bill.
+
+price=int(input("enter the price"))
+quantity=int(input("enter the quantity"))
+total=price*quantity
+print("total bill is :",total)
+
+#4. Mobile Recharge Calculator
+#Accept recharge amount and GST percentage. Calculate the GST and final amount.
+
+recharge=int(input("enter the recharge amount"))
+gst=int(input("enter the gst percentage"))
+gst_amount=(recharge*gst)/100
+final_amount=recharge+gst_amount
+print("gst amount is :",gst_amount)
+print("final amount is :",final_amount)
+
+#5. Temperature Converter
+#Accept temperature in Celsius and convert it to Fahrenheit
+
+temperature=int(input("enter the temperature in celsius"))
+fahrenheit=(temperature*9/5)+32
+print("temperature in fahrenheit is :",fahrenheit)
+
+#6. Simple Interest Calculator
+#Accept principal, rate, and time and calculate simple interest and total amount.
+
+principle=int(input("enter the principle"))
+rate=int(input("enter the rate"))
+time=int(input("enter the time"))
+simple_interest=(principle*rate*time)/100
+total_amount=principle+simple_interest
+print("simple interest is :",simple_interest)
+print("total amount is :",total_amount)
+
+#7. Travel Distance Calculator
+#Accept speed and travel time and calculate the distance travelled
+
+speed=int(input("enter the speed"))
+time=int(input("enter the time"))
+distance=speed*time
+print("distance travelled is :",distance)
+
+#8. BMI Calculator
+#Accept height in metres and weight in kilograms and calculate BMI
+
+heihgt=float(input("enter the height in metres"))
+weight=int(input("enter the weight in kilograms"))
+bmi=weight/(heihgt*heihgt)
+print("bmi is :",bmi)
+
+#9. Electricity Bill Estimator
+#Accept units consumed and cost per unit. Calculate the estimated bill
+
+units=int(input("enter the units consumed"))
+cost=int(input("enter the cost per unit"))
+estimated_bill=units*cost
+print("estimated bill is :",estimated_bill)
+
+
+#10. Shopping Receipt
+#Accept the names and prices of three products and display the total purchase amount.
+
+prd1=input("enter the name of the first product")
+prd2=input("enter the name of the second product")
+prd3=input("enter the name of the third product")
+price1=int(input("enter the price of the first product"))
+price2=int(input("enter the price of the second product"))
+price3=int(input("enter the price of the third product"))
+total_purchase_amount=price1+price2+price3
+print("total purchase amount is :",total_purchase_amount)
+
