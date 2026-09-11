@@ -1,1 +1,286 @@
+#Positive Number
+# Write a Python program to check whether a number is positive.
+
+n=int(input("enter a number"))
+if n>0 :
+  print(n,"positive")
+
+
+#Age Check
+#Write a program to check whether a person is eligible to vote.
+
+age=int(input("enter your age"))
+if age>=18:
+  print("you are eligible to vote")
+
+
+
+#Temperature Alert
+# Write a program to check whether the temperature is above 30°C.
+
+temperature=int(input("enter temperature"))
+if temperature>30:
+  print("it's hot day")
+
+#Number Greater Than 50
+# Input a number and display "Greater than 50" if the number is greater than 50.
+
+n=int(input("enter a number"))
+if n>50:
+  print("Greater than 50")
+
+#Pass Mark
+# Input a student's mark.
+# If the mark is 40 or above, display "Pass".
+
+mark=int(input("enter your mark"))
+if mark>40:
+  print('pass')
+
+#Even Number
+# Input a number.
+#If the number is even, display "Even Number"
+
+
+number=int(input("enter a number"))
+if number%2==0:
+  print("even")
+
+#Free Delivery
+# Input the shopping amount.
+#If the amount is ₹500 or more, display "Free Delivery".
+
+total_amount=int(input("enter your total amount"))
+if total_amount>=500:
+  print("free delivery")
+
+#Password Length
+#Input a password
+#If its length is 8 or more, display "Strong Password".
+
+password=input("enter your password")
+if len(password)>=8:
+  print("strong password")
+
+
+#if-else
+
+# Pass or Fail ○ Input marks.
+#If marks ≥ 40 → "Pass"
+# Otherwise → "Fail"
+
+mark=int(input("enter your mark"))
+if mark>=40:
+  print("pass")
+else:
+  print("fail")
+
+#10. Even or Odd
+# Input a number and determine whether it is even or odd.
+
+n=int(input("enter a number"))
+if n%2==0:
+  print("even")
+else:
+  print("odd")
+
+#11. Voting Eligibility
+# Input age.
+# Display whether the person is eligible to vote or not.
+
+age=int(input("enter your age"))
+if age>=18:
+   print("your eligible to vote")
+else:
+  print("your not eligible to vote")
+
+#12. Positive or Negative
+#Input a number.
+# Display whether it is positive or negative.
+
+number=int(input("enter a number"))
+if number>0:
+  print("positive")
+else:
+  print("negative")
+
+# Greater Number
+#Input two numbers.
+# Display the greater number.
+
+n=int(input("enter a number"))
+m=int(input("enter a number"))
+if n>m:
+  print(n,"is greater")
+else:
+  print(m,"is greater")
+
+#14. Login Check ●
+#Store a correct password in a variable.
+# Ask the user to enter a password.
+ #Display "Login Successful" if it matches; otherwise "Incorrect Password"
+
+password1="adam48"
+password=input("enter your password")
+if password==password1:
+  print("Login Successful")
+else:
+  print("Incorrect Password")
+
+
+#15. Movie Ticket
+# Input age.
+# If age ≥ 18, display "Adult Ticket".
+#Otherwise, display "Child Ticket".
+
+age=int(input("enter your age"))
+if age>=18:
+  print("Adult Ticket")
+else:
+  print("Child Ticket")
+
+#16. Shopping Discount
+# Input the shopping amount.
+# If amount ≥ ₹1000, display "Discount Available".
+# Otherwise, display "No Discount".
+
+total_amount=int(input("enter total amount"))
+if total_amount>=1000:
+  print("discount available")
+else:
+  print("no discount")
+
+#17. Exam Eligibility
+# Input attendance percentage.
+#If attendance ≥ 75, display "Eligible for Exam".
+#Otherwise, display "Not Eligible".
+
+percentage=int(input("enter your percentage"))
+if percentage>=75:
+  print("eligible for exam")
+else:
+  print("not eligible")
+
+#18. Number Divisibility
+# Input a number.
+#Check whether it is divisible by 5 or not.
+
+number=int(input("enter a number"))
+if number%5==0:
+  print("divisible by 5")
+else:
+  print("not divisible")
+
+#19. Largest of Two Numbers
+# Input two numbers and find the largest using if-else.
+
+number=int(input("enter a number"))
+number1=int(input("enter a number"))
+if number>number1:
+  print(number,"is greater")
+else:
+  print(number1,"is greater")
+
+#20. Smallest of Two Numbers
+# Input two numbers and display the smallest.
+
+number=int(input("enter a number"))
+number1=int(input("enter a number"))
+if number<number1:
+  print(number,"is smaller")
+else:
+  print(number1,"is smaller")
+
+#21. Temperature Decision
+# Input temperature.
+# If temperature ≥ 35 → "Very Hot"
+#Otherwise → "Normal Temperature"
+
+temperature=int(input("enter temperature"))
+if temperature >=35:
+  print("very hot")
+else:
+  print("Normal Temperature")
+
+#22. Bank Withdrawal ●
+# Input account balance and withdrawal amount.
+# ● If withdrawal amount is less than or equal to balance, display "Withdrawal Successful". 
+#● Otherwise, display "Insufficient Balance".
+
+balance=int(input("enter your balance"))
+withdrawal=int(input("enter your withdrawal amount"))
+if withdrawal<=balance:
+  print("withdrawal successful")  
+else:
+  print("insufficient balance")
+
+#23. Shopping Discount 
+# Input shopping amount. 
+#If amount ≥ ₹2000, display "20% Discount". 
+# Otherwise, display "No Discount". 
+
+total_amount=int(input("enter total amount"))
+if total_amount>=2000:
+  print("20% discount")
+else:
+  print("no discount")  
+  
+
+
+#24. Electricity Usage 
+# Input units consumed. 
+#If units > 100, display "High Electricity Usage". 
+# Otherwise, display "Normal Usage".
+
+unit_consumed=int(input("enter the units consumed"))
+if unit_consumed >100:
+  print("high electricity usage")
+else:
+  print("normal usage")
+
+#25. Student Result 
+# Input marks. 
+# If marks ≥ 50, display "Passed the Subject". 
+#Otherwise, display "Failed the Subject". 
+
+mark=int(input("enter your mark"))
+if mark>=50:
+  print("passed the subject")
+else:
+  print("failed the subject")
+
+#26. Salary Bonus 
+# Input salary. 
+# If salary is less than ₹30,000, display "Eligible for Bonus". 
+ #Otherwise, display "Not Eligible for Bonus". 
+
+salary=int(input("enter your salary"))
+if salary <30000:
+  print("Eligible for Bonus")
+else:
+  print("Not Eligible for Bonus")
+
+#27. Number Comparison 
+# Input two numbers. 
+# If they are equal, display "Both numbers are equal". 
+# Otherwise, display "Numbers are different".
+
+n1=int(input("enter a number"))
+n2=int(input("enter a number"))
+if n1==n2:
+  print("both numbers are equal")
+else:
+  print("numbers are different")
+
+#28. Bus Pass 
+# Input age.
+#If age ≥ 60, display "Senior Citizen Discount". 
+# Otherwise, display "Regular Fare".
+
+age=int(input("enter your age"))
+if age>=60:
+  print("Senior Citizen Discount")
+else:
+  print("Regular Fare")
+
 
